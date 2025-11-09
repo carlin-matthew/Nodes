@@ -1,16 +1,28 @@
 package nodes;
 
-public class Node {
-	public int data;
-	public Node prev;
-	public Node next;
+public class Node<T> {
+	public T data;
+	public Node<T> prev;
+	public Node<T> next;
 	
-	public Node (Node next, int data) {
-		this.next = next;
+	public Node (T data) {
 		this.data = data;
 		this.prev = null;
 	}
 	
+	public void setPrev(Node<T> node) {
+		this.prev = node;
+	}
+	
+	public void setNext(Node<T> node) {
+		this.next = node;
+	}
+	
+	public void print() {
+		System.out.printf("%s ", data);
+	}
+	
+	/*
 	public void printForward() {
 		try {
 			Node curr = this;
@@ -42,6 +54,7 @@ public class Node {
 	public String toString() {
 		return "" + data;
 	}
+	*/
 	
 
 }
