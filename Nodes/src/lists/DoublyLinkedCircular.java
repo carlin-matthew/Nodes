@@ -42,7 +42,7 @@ public class DoublyLinkedCircular<T> {
 		}
 	}
 	
-	// TODO: Appends to end of list.
+	// Appends to end of list.
 	public void append(T data) {
 		Node<T> temp = new Node<T>(data);
 		length++;

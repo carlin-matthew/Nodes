@@ -61,6 +61,22 @@ public class SinglyLinked<T> {
 		return this.getNext().data;
 	}
 	
+	// Reverses list order.
+	public void reverse() {
+		Node<T> prev = null;
+		Node<T> curr = head;
+		Node<T> next;
+		
+		while (curr != null) {
+			next = curr.next;
+			curr.setNext(prev);
+			prev = curr;
+			curr = next;
+		}
+		
+		head = prev;
+	}
+	
 	// Prints the list to console from start to end.
 	public void printList() {
 		if (head != null) {
