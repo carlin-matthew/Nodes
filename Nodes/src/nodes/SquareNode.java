@@ -4,7 +4,7 @@ public class SquareNode {
 	public int value; // For any value, such as a cost to traverse.
 	public int x; // x coordinate/column
 	public int y; // y coordinate/row
-	public boolean traversable; // Can be used for path-finding algorithm to store whether a square can be traversed.
+	public boolean traversible; // Can be used for path-finding algorithm to store whether a square can be traversed.
 	public boolean checked; // Can be used for path-finding algorithm to store whether a square has been checked.
 	
 	
@@ -21,7 +21,7 @@ public class SquareNode {
 		down = null;
 		left = null;
 		right = null;
-		traversable = true; // Default is true.
+		traversible = true; // Default is true.
 		checked = false; // Default is false.
 	}
 	
