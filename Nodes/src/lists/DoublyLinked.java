@@ -85,6 +85,16 @@ public class DoublyLinked<T> {
 		return currPoint.data;
 	}
 	
+	// Returns the head.
+	public Node<T> getHead() {
+		return head;
+	}
+	
+	// Returns the tail.
+	public Node<T> getTail() {
+		return tail;
+	}
+	
 	// Prints the list to console from start to end.
 	public void printListF() {
 		if (head != null) {

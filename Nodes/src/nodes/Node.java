@@ -22,6 +22,10 @@ public class Node<T> {
 		System.out.printf("%s ", data);
 	}
 	
+	public T getData() {
+		return data;
+	}
+	
 	/*
 	public void printForward() {
 		try {

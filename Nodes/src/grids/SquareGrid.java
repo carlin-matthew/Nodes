@@ -29,6 +29,10 @@ public class SquareGrid {
 		}
 
 	}
+	
+	public SquareNode getNode(int rowY, int colX) {
+		return arr[rowY][colX];
+	}
 
 	public void printGrid() {
 		for (int i = 0; i < arr.length; i++) {
