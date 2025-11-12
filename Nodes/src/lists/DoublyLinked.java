@@ -53,6 +53,13 @@ public class DoublyLinked<T> {
 		}
 	}
 	
+	// Removes the tail from the list.
+	public void delTail() {
+		tail = tail.prev;
+		tail.next.prev = null;
+		tail.next = null;
+	}
+	
 	// Moves the currPoint to the previous node in list. Returns the node.
 	public Node<T> prevNode() {
 		currPoint = (currPoint != null) ? currPoint.prev : null;

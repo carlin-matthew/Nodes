@@ -42,5 +42,9 @@ public class SquareGrid {
 			System.out.println();
 		}
 	}
+	
+	public SquareNode[][] getArr() {
+		return arr;
+	}
 
 }
